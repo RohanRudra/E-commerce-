@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Manrope:wght@700&family=Nosifer&family=Playpen+Sans&family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-family: "Nosifer", sans-serif;
+  font-family: "Playpen Sans", cursive;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+#home {
+  background-image: url("background.jpg");
+  background-color: aliceblue;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+section {
+  text-align: center;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  width: 900px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+  background-color: rgb(15, 1, 1);
+}
+.nav::before {
+  content: "";
+  position: relative;
+  left: -75px;
+  height: 60px;
+  width: 60px;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  transform: rotate(0);
+  background-color: black;
+}
+.nav::after {
+  content: "";
+  position: relative;
+  right: -75px;
+  height: 60px;
+  width: 60px;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  transform: rotate(0);
+  background-color: black;
+}
+.nav a {
+  display: inline-block;
+  font-size: 17px;
+  margin: 4px 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.nav a:hover {
+  color: lightblue;
+}
+.heading {
+  font-size: 45px;
+  margin: 12px auto;
+}
+.sub-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0 0;
+}
+.sub-nav div {
+  margin: 0 25px;
+}
+input {
+  height: 40px;
+  width: 400px;
+  border-radius: 27px;
+  padding: 0 12px;
+  font-weight: bold;
+  border: 1.5px solid black;
+}
+.search-bar i {
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+  left: -40px;
+}
+button {
+  height: 40px;
+  width: 160px;
+  background: white;
+  border-radius: 27px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 3px 16px;
+  font-size: 16px;
+  border: 1.5px solid black;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  height: 30px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f9f9f9;
+}
+h3 {
+  margin: 60px auto;
+  font-size: 60px;
+  color: white;
+  height: 400px;
+  width: 600px;
+  text-shadow: 0 0 4px black;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  min-height: 200px;
+  padding: 12px;
+  width: 300px;
+  border: 2px solid black;
+  box-shadow: 4px 8px 2px 0 rgb(0, 0, 0, 0.2);
+  border-radius: 16px;
+  margin: 40px;
+  transition: all 0.5s ease-in;
+}
+.box:hover {
+  transform: translateY(-12px);
+}
+img {
+  margin: 12px auto;
+  height: 200px;
+  width: 200px;
+}
+.clothes {
+  padding: 24px;
+}
